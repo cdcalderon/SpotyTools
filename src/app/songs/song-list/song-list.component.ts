@@ -8,7 +8,10 @@ import {Song} from "../song.model";
 })
 export class SongListComponent implements OnInit {
   songs: Song[] = [
-    new Song('regett', 'ponchito', 2017, 'nice song', 'url')
+    new Song('regett', 'ponchito', 2017, 'nice song',
+      'https://images-na.ssl-images-amazon.com/images/I/61uwB2wOVbL._AC_US436_QL65_.jpg'),
+    new Song('regett', 'ponchito', 2017, 'nice song',
+      'https://images-na.ssl-images-amazon.com/images/I/61uwB2wOVbL._AC_US436_QL65_.jpg')
   ];
 
   constructor() { }

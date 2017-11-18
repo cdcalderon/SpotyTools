@@ -1,3 +1,14 @@
-<p>
-  playlists works!
-</p>
+<div class="row">
+  <div class="col-md-12">
+    <app-playlist-edit></app-playlist-edit>
+    <hr>
+    <ul class="list-group">
+      <a class="list-group-item"
+         style="cursor: pointer"
+         href=""
+         *ngFor="let pl of playlists">
+          {{pl.name}}  {{pl.genre}}
+      </a>
+    </ul>
+  </div>
+</div>
