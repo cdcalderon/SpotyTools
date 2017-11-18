@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -24,7 +25,11 @@ import { PlaylistEditComponent } from './playlists/playlist-list/playlist-edit/p
     PlaylistEditComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      { path:'', component: SongListComponent},
+      { path:'playlist', component: PlaylistsComponent }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

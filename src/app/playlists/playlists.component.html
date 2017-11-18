@@ -2,13 +2,8 @@
   <div class="col-md-12">
     <app-playlist-edit></app-playlist-edit>
     <hr>
-    <ul class="list-group">
-      <a class="list-group-item"
-         style="cursor: pointer"
-         href=""
-         *ngFor="let pl of playlists">
-          {{pl.name}}  {{pl.genre}}
-      </a>
-    </ul>
+    Playlists:
+
+    <app-playlist-list></app-playlist-list>
   </div>
 </div>

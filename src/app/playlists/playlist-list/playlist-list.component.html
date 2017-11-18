@@ -1,3 +1,12 @@
-<p>
-  playlist-list works!
-</p>
+<div class="container">
+  <div class="row">
+    <ul class="list-group">
+      <a class="list-group-item"
+         style="cursor: pointer"
+         href=""
+         *ngFor="let pl of playlists">
+        {{pl.name}}  {{pl.genre}}
+      </a>
+    </ul>
+  </div>
+</div>
