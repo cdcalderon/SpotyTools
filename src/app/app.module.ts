@@ -28,7 +28,7 @@ import { PlaylistEditComponent } from './playlists/playlist-list/playlist-edit/p
     BrowserModule,
     RouterModule.forRoot([
       { path:'', component: SongListComponent},
-      { path:'playlist', component: PlaylistsComponent }
+      { path:'playlist/:id', component: PlaylistsComponent }
     ])
   ],
   providers: [],
